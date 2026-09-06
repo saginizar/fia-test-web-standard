@@ -1,3 +1,10 @@
 node_modules/
 dist/
 *.local.json
+
+# FIA — never commit the owner secret or the generated nudge
+Intelligent-Feedback-Agent-FIA/fia.owner.local.json
+Intelligent-Feedback-Agent-FIA/fia-payload.json
+Intelligent-Feedback-Agent-FIA/fia-identify.json
+*/fia.owner.local.json
+.cursor/rules/fia-inbox.generated.mdc
