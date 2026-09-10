@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "deploy": "npm run build && aws s3 sync dist/ s3://my-test-app-bucket/ --delete"
+    "deploy": "npm run build && gh-pages -d dist -r git@github.com:saginizar/fia-test-web-standard.git"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -14,6 +14,9 @@
   "devDependencies": {
     "vite": "^5.4.0",
     "@vitejs/plugin-react": "^4.3.1",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "gh-pages": "^6.1.1",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0"
   }
 }
