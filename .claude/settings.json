@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node Intelligent-Feedback-Agent-FIA/hooks/fia-inbox-check.mjs"
+          }
+        ]
+      }
+    ]
+  }
+}
